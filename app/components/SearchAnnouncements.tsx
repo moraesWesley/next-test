@@ -3,12 +3,11 @@
 
 import { useState } from "react"
 
-export default function SearchAnnouncements({getSearchResults}){
+export default function SearchAnnouncements({getSearchResults} : any){
     const [query, setQuery] = useState('')
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e : any) => {
         e.preventDefault()
-        console.log("Entrou aqui sim pqp")
         const response = await fetch(`api/announcements/search?query=${query}`)
 
         const announcement = await response.json()
