@@ -31,11 +31,11 @@ export default function Announcements({announcements}){
             <table className="w-full border-collapse" >
                 <thead className="bg-gray-50 border-gray-200">
                     <tr>
-                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Produto</th>
-                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Preço</th>
-                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Quantidade</th>
-                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Taxa</th>
-                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Shipping</th>
+                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Produto</th>
+                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Preço</th>
+                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Quantidade</th>
+                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Taxa</th>
+                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Shipping</th>
                     </tr>
                 </thead>
                 <tbody className=" divide-y divide-blue-200 ">
@@ -60,10 +60,10 @@ export default function Announcements({announcements}){
                                     </button>
                                 </div>
                             </td>
-                            <td className="text-base">{announcement.value}</td>
-                            <td className="text-base">{announcement.quantity}</td>
-                            <td className="text-base">{announcement.sale_fee}</td>
-                            <td className="text-base">{announcement.shipping_price}</td>
+                            <td className="text-base lg:text-lg">{announcement.value}</td>
+                            <td className="text-base lg:text-lg">{announcement.quantity}</td>
+                            <td className="text-base lg:text-lg">{announcement.sale_fee}</td>
+                            <td className="text-base lg:text-lg">{announcement.shipping_price}</td>
 
                         </tr>
                         <tr>

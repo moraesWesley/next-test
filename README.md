@@ -1,28 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Test Next Tecnologia
 
-## Test Next Tecnologia
-
-Requisitos solicitados:
-- Criar um componente de tabela com listagem de anúncios em que seja possível filtrar pelo nome, SKU ou MLB (ok)
-- Utilizar Next.js e Tailwind CSS (ok)
-- Utilizar o arquivo announcements.json como fonte de dados para os anúncios (ok)
-- O componente deve ser responsivo, pelo menos de 1024px para cima (ok)
-- Uma dica: orders_detail e orders_group são informações que gostaríamos de ver com opções de expandir ou ocultar (ok)
+## Requisitos solicitados:
+- Criar um componente de tabela com listagem de anúncios em que seja possível filtrar pelo nome, SKU ou MLB [x]
+- Utilizar Next.js e Tailwind CSS [x]
+- Utilizar o arquivo announcements.json como fonte de dados para os anúncios [x]
+- O componente deve ser responsivo, pelo menos de 1024px para cima [x]
+- Uma dica: orders_detail e orders_group são informações que gostaríamos de ver com opções de expandir ou ocultar [x]
 
 O que pode ser melhorado:
-- Desempenho ao clicar nos botões (para específicar que quer somente aquelas informações expandidas)
-- Melhorar o CSS, criando classes específicas no arquivo tailwind.config.ts, principalmente para as linhas da tabela
-- 
+- Desempenho ao clicar nos botões (para específicar que quer somente aquelas informações expandidas)[ ]
+- Melhorar o CSS, criando classes específicas no arquivo tailwind.config.ts, principalmente para as linhas da tabela no arquivo: tailwind.config.ts[ ]
 
 O que levaria para o time discutir:
 - Melhores práticas para usar o height no momento da busca
 - O que gostariam que fosse melhorado no design
+- Regras de negócio que devam ser respeitadas
 
-Como foi fazer o teste:
-Quebrei em pedaços! Haja visto que nunca tinha entrado em contato com NextJs e Tailwind. Primeiro fiz o código em javascript 
-e posteriormente estudei tailwind.
+O que não consegui resolver momentaneamente, alternativas futuras:
+- Levei a questão para que a comunidade me oriente: [StackOverflow Br](https://pt.stackoverflow.com/questions/589974/como-fazer-o-bot%c3%a3o-toggle-exibir-apenas-o-conte%c3%bado-desejado-numa-tabela-gerada-p)
 
-## Getting Started
+------------
+------------
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+### Getting Started
 
 First, run the development server:
 
@@ -37,7 +40,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -46,7 +49,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
