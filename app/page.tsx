@@ -27,7 +27,7 @@ export default function Home() {
       <div className="w-full h-32 bg-gradient-to-r from-blue-950 to-blue-500 mb-10">
         <h2 className="text-center pt-12 text-4xl text-white ">Next Teste!</h2>
       </div>
-      <SearchAnnouncements getSearchResults={(results) => setAnnouncements(results)} />
+      <SearchAnnouncements getSearchResults={(results : any) => setAnnouncements(results)} />
       <Announcements announcements={announcements} />
     </div>
   )
