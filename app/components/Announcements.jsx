@@ -27,21 +27,21 @@ export default function Announcements({announcements}){
 
     return(
         <>
-        <div className="overflow-auto rounded-lg shadow w-full pl-4 pr-4">
+        <div className="overflow-auto lg:overflow-visible rounded-lg shadow w-full pl-4 pr-4">
             <table className="w-full border-collapse" >
                 <thead className="bg-gray-50 border-gray-200">
                     <tr>
-                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Produto</th>
-                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Preço</th>
-                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Quantidade</th>
-                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Taxa</th>
-                    <th className="p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3">Shipping</th>
+                    <th className="title-table">Produto</th>
+                    <th className="title-table">Preço</th>
+                    <th className="title-table">Quantidade</th>
+                    <th className="title-table">Taxa</th>
+                    <th className="title-table">Shipping</th>
                     </tr>
                 </thead>
                 <tbody className=" divide-y divide-blue-200 ">
                     {announcements.map(announcement => (
                         <><tr key={announcement.ads_id} className="hover:bg-slate-400 bg-white mb-4">
-                            <td className="whitespace-nowrap">
+                            <td className="whitespace-nowrap lg:whitespace-normal">
                                 <div className="p-2">
                                     <p className="text-base font-medium">{announcement.name}</p>
                                     <p className="text-sm" >{announcement.ads_id}</p>
@@ -70,10 +70,10 @@ export default function Announcements({announcements}){
                         {isVisible1 &&
                             <table>
                                 <thead className="bg-slate-300">
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">id</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Data</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Imposto</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Valor Total</th>
+                                    <th className="title-subtable">id</th>
+                                    <th className="title-subtable">Data</th>
+                                    <th className="title-subtable">Imposto</th>
+                                    <th className="title-subtable">Valor Total</th>
 
                                 </thead>
                                 <tbody>
@@ -93,12 +93,12 @@ export default function Announcements({announcements}){
                         {isVisible2 && 
                             <table>
                                 <thead className="bg-slate-300">
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">id</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">valor</th>  
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Quantidade</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Valor Total</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Taxa de Transação</th>
-                                    <th className="p-3 text-sm font-semibold tracking-wide text-left">Imposto</th>  
+                                    <th className="title-subtable">id</th>
+                                    <th className="title-subtable">valor</th>  
+                                    <th className="title-subtable">Quantidade</th>
+                                    <th className="title-subtable">Valor Total</th>
+                                    <th className="title-subtable">Taxa de Transação</th>
+                                    <th className="title-subtable">Imposto</th>  
                                 </thead>
                                 <tbody>
                                     {announcement.orders_group.map(group => (

@@ -9,7 +9,7 @@
 
 O que pode ser melhorado:
 - Desempenho ao clicar nos botões (para específicar que quer somente aquelas informações expandidas)[ ]
-- Melhorar o CSS, criando classes específicas no arquivo tailwind.config.ts, principalmente para as linhas da tabela no arquivo: tailwind.config.ts[ ]
+- Melhorar o CSS, criando classes específicas no arquivo tailwind.config.ts, principalmente para as linhas da tabela no arquivo: global.css[x]
 
 O que levaria para o time discutir:
 - Melhores práticas para usar o height no momento da busca
@@ -18,6 +18,8 @@ O que levaria para o time discutir:
 
 O que não consegui resolver momentaneamente, alternativas futuras:
 - Levei a questão para que a comunidade me oriente: [StackOverflow Br](https://pt.stackoverflow.com/questions/589974/como-fazer-o-bot%c3%a3o-toggle-exibir-apenas-o-conte%c3%bado-desejado-numa-tabela-gerada-p)
+
+### Deploy: [Aplicação](https://next-test-rn8i.vercel.app/)
 
 ------------
 ------------

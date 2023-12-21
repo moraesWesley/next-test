@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .title-table {
+    @apply p-2 text-sm font-semibold tracking-wide text-left lg:text-lg lg:p-3;
+  }
+
+  .title-subtable{
+    @apply p-3 text-sm font-semibold tracking-wide text-left;
+  }
+}
+
 /*
 :root {
   --foreground-rgb: 0, 0, 0;
