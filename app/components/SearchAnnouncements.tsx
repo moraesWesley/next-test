@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/Link"
+
 import { useState } from "react"
 
 export default function SearchAnnouncements({getSearchResults}){
