@@ -1,17 +1,34 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Test Next Tecnologia
+
+Requisitos solicitados:
+- Criar um componente de tabela com listagem de anúncios em que seja possível filtrar pelo nome, SKU ou MLB (ok)
+- Utilizar Next.js e Tailwind CSS (ok)
+- Utilizar o arquivo announcements.json como fonte de dados para os anúncios (ok)
+- O componente deve ser responsivo, pelo menos de 1024px para cima (ok)
+- Uma dica: orders_detail e orders_group são informações que gostaríamos de ver com opções de expandir ou ocultar (ok)
+
+O que pode ser melhorado:
+- Desempenho ao clicar nos botões (para específicar que quer somente aquelas informações expandidas)
+- Melhorar o CSS, criando classes específicas no arquivo tailwind.config.ts, principalmente para as linhas da tabela
+- 
+
+O que levaria para o time discutir:
+- Melhores práticas para usar o height no momento da busca
+- O que gostariam que fosse melhorado no design
+
+Como foi fazer o teste:
+Quebrei em pedaços! Haja visto que nunca tinha entrado em contato com NextJs e Tailwind. Primeiro fiz o código em javascript 
+e posteriormente estudei tailwind.
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
