@@ -13,6 +13,9 @@ export default function SearchAnnouncements({getSearchResults} : any){
         const announcement = await response.json()
 
         getSearchResults(announcement)
+
+        
+        
     }
 
     return(

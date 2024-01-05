@@ -28,5 +28,6 @@ export async function GET(request){
         || announcement.ads_id.toLowerCase().includes(query.toLowerCase())
     })
 
+
     return NextResponse.json(filteredAnnouncements)
 }

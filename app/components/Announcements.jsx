@@ -12,6 +12,7 @@
 
 import { useState } from "react"
 import OrderDetail from "./OrderDetail"
+import Image from "next/image";
 
 
 export default function Announcements({announcements}){
@@ -27,11 +28,24 @@ export default function Announcements({announcements}){
         setIsVisible1(!isVisible1);
     }
     */
+
+    let verificacao = true;
+
+    if(Object.keys(announcements).length === 0){
+        verificacao = false
+    }else{
+        verificacao = true
+    }
+
     return(
         <>
-        <div className="overflow-auto lg:overflow-visible rounded-lg shadow w-full pl-4 pr-4">
-            <table className="w-full border-collapse" >
-                <thead className="bg-gray-50 border-gray-200">
+
+        {verificacao ? 
+        
+
+        <div className="overflow-auto lg:overflow-visible rounded-lg shadow wrap-table">
+            <table className="w-full border-separate border-spacing-10-px" >
+                <thead className="bg-gray-100 border-gray-200 ">
                     <tr>
                     <th className="title-table">Produto</th>
                     <th className="title-table">Preço</th>
@@ -49,7 +63,17 @@ export default function Announcements({announcements}){
                 </tbody>
             </table>
         </div>
+        : 
 
+        <div className="flex flex-row items-center p-10">
+            <div>
+                <Image src="/images/error.png" alt="me" width="164" height="164"/>
+            </div>
+            <div className="ml-6">
+                <h2 className="text-cyan-700">Nenhum produto encontrado</h2>     
+            </div>
+        </div>
+        }
 
         </>
     )
